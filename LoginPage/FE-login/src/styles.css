@@ -1,0 +1,116 @@
+/* === Font & Base Style === */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Nunito Sans", "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(160deg, #cfe8ff 0%, #bcd3ff 50%, #a8c0ff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  color: #1e293b;
+}
+
+/* === Container === */
+.portal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* === Card === */
+.portal-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  width: 380px;
+  max-width: 90%;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* === Logo === */
+.portal-logo {
+  width: 120px;
+  margin-bottom: 24px;
+  user-select: none;
+}
+
+/* === Title & Subtitle === */
+.portal-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+
+.portal-subtitle {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* === Button === */
+.portal-btn {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  padding: 14px 24px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+}
+
+.portal-btn:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.portal-btn.disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* === Footer === */
+.portal-footer {
+  font-size: 13px;
+  font-weight: 500;
+  color: #9ca3af;
+  margin-top: 28px;
+}
