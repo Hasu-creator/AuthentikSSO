@@ -1,11 +1,7 @@
-body { font-family: system-ui, sans-serif; margin:0; padding:0; }
-.header { background:#f5f7fb; padding:16px; border-bottom:1px solid #eee; }
-.app { max-width:1000px; margin:24px auto; padding:0 16px; }
-.center { padding:40px; text-align:center; }
-.alert.error { background:#fee; color:#900; padding:16px; border-radius:6px; margin:20px 0; }
-.portal-list { display:flex; flex-direction:column; gap:12px; margin-top:16px; }
-.app-card { display:flex; gap:12px; align-items:center; padding:12px; border:1px solid #eee; border-radius:8px; }
-.app-icon { width:60px; height:60px; object-fit:cover; border-radius:6px; }
-.app-icon.placeholder { width:60px; height:60px; background:#ddd; border-radius:6px; }
-.app-main { flex:1; }
-.app-actions button { padding:8px 12px; border:0; background:#1677ff; color:white; border-radius:6px; cursor:pointer; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}

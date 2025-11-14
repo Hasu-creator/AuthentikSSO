@@ -92,5 +92,6 @@ def callback(payload: CallbackPayload):
         "groups": user.get("groups", []),
         "is_superuser": user.get("is_superuser", False),
     }
+    print("🚀 ACCESS TOKEN SENT TO FE:", access_token)
 
     return {"access_token": access_token, "user": out_user}

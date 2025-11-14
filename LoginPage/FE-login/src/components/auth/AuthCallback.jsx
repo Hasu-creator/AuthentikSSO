@@ -20,6 +20,7 @@ export default function AuthCallback() {
         const params = new URLSearchParams(window.location.search);
         const data = await authService.handleCallback(params);
         
+        console.log("access_token FE nhận:", data.access_token);
         console.log("✅ Auth callback success:", data);
         console.log("👤 User:", data.user);
         console.log("🔑 Is superuser:", data.user?.is_superuser);
@@ -111,3 +112,4 @@ export default function AuthCallback() {
     </div>
   );
 }
+
